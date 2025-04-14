@@ -2,14 +2,12 @@ import base64
 import requests
 import os
 
-# 📌 Настройки
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 REPO = "Bubi-mubi/Telegram-bot"
 FILE_PATH = "test.py"
 BRANCH = "main"
 COMMIT_MESSAGE = "Auto update via GPT Agent 🤖"
 
-# 🧠 Промяната, която ще правим
 FIND_TEXT = "Запази"
 REPLACE_TEXT = "Изпрати"
 
