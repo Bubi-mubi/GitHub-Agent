@@ -3,7 +3,9 @@ import requests
 import os
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-REPO = "Bubi-mubi/Telegram-bot"
+REPO = os.getenv("TARGET_REPO")
+if not REPO:
+    raise ValueError("❌ Не е зададена променлива TARGET_REPO!")
 FILE_PATH = "test.py"
 BRANCH = "main"
 COMMIT_MESSAGE = "Auto update via GPT Agent 🤖"
